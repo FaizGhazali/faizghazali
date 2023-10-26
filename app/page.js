@@ -18,7 +18,7 @@ export default function Home() {
         <svg
           onClick={() => setTheme("light")}
           xmlns="http://www.w3.org/2000/svg"
-          className="h-10 w-10 text-indigo-200"
+          className="h-10 w-10 text-red-200"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
