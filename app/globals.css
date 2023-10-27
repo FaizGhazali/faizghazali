@@ -6,6 +6,10 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --text-color-light: #333;
+  --background-light: #fff;
+  --text-color-dark: #fff;
+  --background-dark: #333;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +21,15 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--text-color-light);
+  background-color: var(--background-light);
+  transition: color 0.3s, background-color 0.3s;
+}
+
+body.dark {
+  color: var(--text-color-dark);
+  background-color: var(--background-dark);
+}
+.text-light {
+  color: var(--text-color-light);
 }
