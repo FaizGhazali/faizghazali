@@ -4,10 +4,19 @@ import App from 'next/app';
 import Head from 'next/head';
 import Header from '../components/header'; // Import the Header component
 import Layout from '../app/layout';
+import HomeLayout from '../components/Layout/HomeLayout';
 
 class MyApp extends App {
   render() {
-    const { Component, pageProps } = this.props;
+    const { Component, pageProps,router } = this.props;
+    let LayoutComponent;
+
+    //special layout
+    if(router.pathname==='/'){
+      LayoutComponent = HomeLayout;
+    }else{
+      LayoutComponent = Layout;
+    }
 
     return (
       <>
@@ -15,9 +24,9 @@ class MyApp extends App {
           <title>My Next.js App</title>
         </Head>
        
-        <Layout>
+        <LayoutComponent>
           <Component {...pageProps} />
-        </Layout>
+        </LayoutComponent>
       </>
     );
   }
