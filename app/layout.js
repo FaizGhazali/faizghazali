@@ -7,7 +7,7 @@ export default function Layout({ children }) {
   const [colorTheme, setTheme] = useDarkMode();
 
   return (
-    <div className="h-screen w-screen p-10 dark:bg-gray-900 bg-indigo-200">
+    <div className="relative h-full w-full p-10 dark:bg-gray-900 bg-indigo-200 ">
       {colorTheme === "light" ? (
         <>
           <header>Header</header>

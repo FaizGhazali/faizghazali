@@ -14,10 +14,14 @@ export default function HomePage() {
       <div class="bg-blue-500 w-2/5 h-screen ">
         <div className="flex flex-col  items-center justify-center h-screen   text-white text-sm  ">
           <div className="flex flex-col  items-center justify-center h-screen ">
-            <h1 className="">Get Started</h1>
-            <div className=" flex gap-5  ">
-              <div className="">Login</div>
-              <div className="">Sign Up</div>
+            <h1 className="mb-4 text-6xl font-bold ">Get Started</h1>
+            <div className=" flex gap-5   ">
+              <button class="bg-gray-300 hover:bg-green-200 text-3xl text-blue-900 font-bold py-6 px-24   rounded">
+                Login
+              </button>
+              <button class="bg-gray-300 hover:bg-green-200 text-3xl text-blue-900 font-bold py-6 px-24 rounded">
+                SignUp
+              </button>
             </div>
           </div>
 

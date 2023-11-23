@@ -3,7 +3,7 @@ import React from 'react';
 import App from 'next/app';
 import Head from 'next/head';
 import Header from '../components/header'; // Import the Header component
-import Layout from '../app/layout';
+import Layout from '../components/Layout/Layout';
 import HomeLayout from '../components/Layout/HomeLayout';
 
 class MyApp extends App {

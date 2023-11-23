@@ -8,6 +8,10 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      colors: {
+        gold: '#FFD700',
+        // Add any other custom colors you need here
+      },
       textColor: {
         'light': 'var(--text-color-light)',
         'dark': 'var(--text-color-dark)',
