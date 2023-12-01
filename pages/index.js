@@ -1,5 +1,6 @@
 import React from "react";
 import MyLayout from "../components/Layout/HomeLayout";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -16,9 +17,11 @@ export default function HomePage() {
           <div className="flex flex-col  items-center justify-center h-screen ">
             <h1 className="mb-4 text-6xl font-bold ">Get Started</h1>
             <div className=" flex gap-5   ">
-              <button class="bg-gray-300 hover:bg-green-200 text-3xl text-blue-900 font-bold py-6 px-24   rounded">
-                Login
-              </button>
+              <Link href="/1">
+                <button className="bg-gray-300 hover:bg-green-200 text-3xl text-blue-900 font-bold py-6 px-24 rounded">
+                  Login
+                </button>
+              </Link>
               <button class="bg-gray-300 hover:bg-green-200 text-3xl text-blue-900 font-bold py-6 px-24 rounded">
                 SignUp
               </button>
