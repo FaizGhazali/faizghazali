@@ -26,6 +26,11 @@ export default function HomePage() {
                 SignUp
               </button>
             </div>
+            <Link href="/testing">
+              <button className="bg-gray-300 hover:bg-green-200 text-3xl text-blue-900 font-bold py-6 px-24 mt-5 rounded">
+                Testing
+              </button>
+            </Link>
           </div>
 
           <div className="mt-auto">

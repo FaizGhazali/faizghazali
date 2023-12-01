@@ -5,10 +5,10 @@ import Footer from "./Footer";
 
 const MyLayout = ({ children }) => {
   return (
-    <div className="relative z-0 flex flex-col h-full w-full overflow-hidden bg-gray-900">
+    <div className="flex flex-col min-h-screen bg-gray-900  ">
       <Header/>
-      <main>{children}</main>
-      <Footer/>
+      <main className='flex-1'>{children}</main>
+      <Footer className="py-4"/>
     </div>
   );
 };
