@@ -16,7 +16,7 @@ export default function testingPage() {
     }, 3000);
 
     return () => clearTimeout(timer); // Clean up the timer on component unmount
-  }, []); // Empty dependency array ensures this effect runs only once
+  }, [imageSrc]); // Empty dependency array ensures this effect runs only once
   return (
     <>
       <div className="flex-1/2 bg-red-300 border border-solid border-white">
